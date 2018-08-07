@@ -8,8 +8,9 @@ import time
 
 
 if __name__ == "__main__":                             #新笔趣阁
+    novelname = '百炼飞升录'
     #创建txt文件
-    file = open('百炼飞升录.txt','w',encoding='utf-8')
+    file = open(novelname+'.txt','w',encoding='utf-8')
     #小说目录地址
     target_url = 'https://www.xxbiquge.com/4_4808/'
     # User-Agent
@@ -48,7 +49,7 @@ if __name__ == "__main__":                             #新笔趣阁
         #滤除回车
         if child != '\n':
             #找到《一念永恒》正文卷，使能标志位
-            if child.string == u"《百炼飞升录》正文":
+            if child.string == u"《“+novelname+”》正文":
                 begin_flag = True
             if begin_flag == True and child.a != None:
                 download_url = target_url + child.a.get('href').split('/')[2]

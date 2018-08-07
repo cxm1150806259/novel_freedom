@@ -7,12 +7,13 @@ import sys
 import time
 
 
-if __name__ == "__main__":                             #新笔趣阁
-    novelname = '终极小村医'
+if __name__ == "__main__":
+    novelname = '异世为僧'
+    #新笔趣阁
     #创建txt文件
     file = open(novelname+'.txt','w',encoding='utf-8')
     #小说目录地址
-    target_url = 'https://www.xxbiquge.com/75_75435/'
+    target_url = 'https://www.xxbiquge.com/1_1379/'
     # User-Agent
     head = {}
     head['User-Agent'] = 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166  Safari/535.19'
